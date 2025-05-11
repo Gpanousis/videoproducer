@@ -1,10 +1,10 @@
 {
     "locales": {
         "en": {
-            "title": "Life recently",
-            "title_menu": "Updates",
+            "title": "Interactive Map",
+            "title_menu": "Map",
             "title_long_prefix": "Take a look at my",
-            "title_long": "Recent **Updates**"
+            "title_long": "Video **Map**"
         },
 
         "es": {
@@ -31,139 +31,33 @@
 
     "articles": [
         {
-            "id": "fun_facts",
-            "component": "ArticleServices",
+            "id": "article-map",
+            "component": "ArticleMap",
             "config": {},
             "locales": {},
 
             "items": [
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-tablet-screen-button",
-                        "faColors": null
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "03",
-                            "info": "Apps published"
-                        },
-                        "es": {
-                            "title": "03",
-                            "info": "Aplicaciones publicadas"
-                        },
-                        "fr": {
-                            "title": "03",
-                            "info": "Applications publiées"
-                        },
-                        "ko": {
-                            "title": "03",
-                            "info": "출시된 앱"
-                        }
-                    }
-                },
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-star",
-                        "faColors": null
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "100+",
-                            "info": "Stars on GitHub"
-                        },
-                        "es": {
-                            "title": "100+",
-                            "info": "Estrellas en GitHub"
-                        },
-                        "fr": {
-                            "title": "100+",
-                            "info": "Étoiles sur GitHub"
-                        },
-                        "ko": {
-                            "title": "100+",
-                            "info": "GitHub 별"
-                        }
-                    }
-                },
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-globe",
-                        "faColors": null
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "12",
-                            "info": "Countries visited"
-                        },
-                        "es": {
-                            "title": "12",
-                            "info": "Países visitados"
-                        },
-                        "fr": {
-                            "title": "12",
-                            "info": "Pays visités"
-                        },
-                        "ko": {
-                            "title": "12",
-                            "info": "방문한 나라"
-                        }
-                    }
-                },
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-diagram-project",
-                        "faColors": null
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "07",
-                            "info": "Open-source projects"
-                        },
-                        "es": {
-                            "title": "07",
-                            "info": "Proyectos de código abierto"
-                        },
-                        "fr": {
-                            "title": "07",
-                            "info": "Projets open-source"
-                        },
-                        "ko": {
-                            "title": "07",
-                            "info": "오픈 소스 프로젝트"
-                        }
-                    }
-                },
-                {
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-coffee",
-                        "faColors": null
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "20,000",
-                            "info": "Coffees consumed"
-                        },
-                        "es": {
-                            "title": "20,000",
-                            "info": "Cafés consumidos"
-                        },
-                        "fr": {
-                            "title": "20,000",
-                            "info": "Cafés consommés"
-                        },
-                        "ko": {
-                            "title": "20,000",
-                            "info": "마신 커피"
-                        }
-                    }
-                }
-
-            ]
+    {
+      "id": "athens",
+      "title": "Athens City",
+      "location": {
+        "coordinates": [23.7275, 37.9838]  
+      },
+      "media": {
+        "video": "https://www.youtube.com/watch?v=rQtGU-ukhA4"  
+      }
+    },
+    {
+      "id": "thessaloniki",
+      "title": "Thessaloniki City",
+      "location": {
+        "coordinates": [22.9444, 40.6401]
+      },
+      "media": {
+        "video": "https://www.youtube.com/watch?v=juFHeAWmnqU"
+      }
+    }
+  ]
         },
 
         {

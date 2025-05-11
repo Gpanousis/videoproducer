@@ -1,0 +1,112 @@
+.video-map-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.marker-thumbnail img {
+  width: 120px;
+  border-radius: 4px;
+}
+
+.marker img{
+  position: relative;
+  width: 40px;
+  -webkit-transition: all 200ms ease;
+-moz-transition: all 200ms ease;
+-ms-transition: all 200ms ease;
+-o-transition: all 200ms ease;
+transition: all 200ms ease;
+}
+.marker img:hover{
+  cursor:pointer;
+  width: 50px;
+}
+.marker-preview {
+  position: absolute;
+  top: -110px;
+  left: -40px;
+  z-index: 10;
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.marker-preview img {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.video-map-container {
+  position: relative;
+
+  &.blurred {
+    //filter: blur(8px);
+    transition: filter 0.5s ease;
+  }
+
+  .marker {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .marker-thumbnail {
+    width: 30px;
+  }
+
+  .marker-preview {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 150px;
+    z-index: 10;
+    pointer-events: none;
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .map-video-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 10;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

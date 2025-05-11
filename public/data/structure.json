@@ -15,9 +15,9 @@
         },
 
         {
-            "id": "skills",
-            "categoryId": "skills-mob",
-            "jsonPath": "/data/sections/skills.json",
+            "id": "updates",
+            "categoryId": "updates-mob",
+            "jsonPath": "/data/sections/updates.json",
             "faIcon": "fa-solid fa-tools"
         },
 
@@ -54,10 +54,10 @@
         },
 
         {
-            "id": "skills-mob",
+            "id": "updates-mob",
             "faIcon": "fa-solid fa-tools",
             "locales": {
-                "en": {"title": "Skills"},
+                "en": {"title": "updates"},
                 "es": {"title": "Trayectoria"},
                 "fr": {"title": "Parcours"},
                 "ko": {"title": "경력"}

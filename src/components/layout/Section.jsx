@@ -17,6 +17,7 @@ import ArticleServices from "/src/components/articles/ArticleServices.jsx"
 import ArticleTestimonials from "/src/components/articles/ArticleTestimonials.jsx"
 import ArticleThread from "/src/components/articles/ArticleThread.jsx"
 import ArticleTimeline from "/src/components/articles/ArticleTimeline.jsx"
+import ArticleMap from "/src/components/articles/ArticleMap.jsx"
 import FullScreenToggleButton from "/src/components/widgets/FullScreenToggleButton"
 import {useData} from "/src/providers/DataProvider.jsx"
 import FaIcon from "/src/components/generic/FaIcon.jsx"
@@ -41,7 +42,8 @@ const ARTICLES = {
     ArticleServices,
     ArticleTestimonials,
     ArticleThread,
-    ArticleTimeline
+    ArticleTimeline,
+    ArticleMap
 }
 
 const utils = useUtils()

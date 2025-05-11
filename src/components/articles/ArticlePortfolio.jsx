@@ -31,16 +31,6 @@ function ArticlePortfolio({ data }) {
     const [shouldAnimate, setShouldAnimate] = useState(false)
     const [skipAnimationForNextChange, setSkipAnimationForNextChange] = useState(false)
 
-    // useEffect(() => {
-    //     const parsedItems = parser.parseArticleItems(parsedData.items)
-    //     const parsedCategories = parser.parseArticleCategories(parsedData.categories)
-    //     parser.bindItemsToCategories(parsedItems, parsedCategories)
-
-    //     setParsedItems(parsedItems)
-    //     setParsedCategories(parsedCategories)
-    //     setCategoryFilterResult(parsedItems)
-    //     setSkipAnimationForNextChange(true)
-    // }, [null, selectedLanguageId])
     useEffect(() => {
         const fetchYouTubeItems = async () => {
             const apiKey = 'AIzaSyBdKJqS_2VEqroyRg6iyIX0Js7wp_4VPEo';
@@ -74,17 +64,8 @@ function ArticlePortfolio({ data }) {
         };
     
         const init = async () => {
-            // const parsedItems = parser.parseArticleItems(parsedData.items);
             const parsedCategories = parser.parseArticleCategories(parsedData.categories);
             parser.bindItemsToCategories(parsedItems, parsedCategories);
-    
-            // const ytItems = await fetchYouTubeItems();
-            // const combinedItems = [...parsedItems, ...ytItems];
-    
-            // setParsedItems(combinedItems);
-            // setParsedCategories(parsedCategories);
-            // setCategoryFilterResult(combinedItems);
-            // setSkipAnimationForNextChange(true);
             const ytItems = await fetchYouTubeItems();
             setParsedItems(ytItems);
             setParsedCategories(parsedCategories);
@@ -178,16 +159,6 @@ function ArticlePortfolio({ data }) {
 
                         {expandableFilterResult.map((item, key) => (
                             <Col key={key} className={`col-12 col-sm-6 col-md-12 col-lg-6 col-xxl-4`}>
-                                {/* <ProjectCard title={item.title}
-                                             subtitle={item.category.singular}
-                                             text={item.text}
-                                             links={item.links}
-                                             options={item.mediaOptions}
-                                             tags={item.tags.slice(0, 3)}
-                                             img={item.img}
-                                             fallbackIcon={item.faIcon}
-                                             fallbackIconColors={item.faIconColors}
-                                             className={`grid-item-hidden`}/> */}
                                 <VideoCard title={item.title}
                                              text={item.text}
                                              options={item.mediaOptions}
