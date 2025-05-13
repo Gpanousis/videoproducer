@@ -1,77 +1,53 @@
 .video-map-container {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 600px;
+  overflow: visible!important;
+
+  &.video-active {
+    .mapboxgl-canvas {
+      filter: blur(4px) brightness(0.7);
+      transition: filter 0.4s ease;
+    }
+  }
 }
 
-.marker-thumbnail img {
-  width: 120px;
-  border-radius: 4px;
-}
-
-.marker img{
+.marker {
   position: relative;
+  transform: translate(0, -50%);
+}
+
+.marker img {
+  display: block;
   width: 40px;
   -webkit-transition: all 200ms ease;
--moz-transition: all 200ms ease;
--ms-transition: all 200ms ease;
--o-transition: all 200ms ease;
-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
-.marker img:hover{
-  cursor:pointer;
+
+.marker img:hover {
+  cursor: pointer;
   width: 50px;
 }
+
 .marker-preview {
-  position: absolute;
-  top: -110px;
-  left: -40px;
+  position:absolute;
   z-index: 10;
   background: white;
   padding: 4px;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -180%);
 }
 
 .marker-preview img {
-  width: 120px;
+  width: 160px;
   height: auto;
-  border-radius: 4px;
 }
 
-.video-map-container {
-  position: relative;
-
-  &.blurred {
-    //filter: blur(8px);
-    transition: filter 0.5s ease;
-  }
-
-  .marker {
-    cursor: pointer;
-    position: relative;
-  }
-
-  .marker-thumbnail {
-    width: 30px;
-  }
-
-  .marker-preview {
-    position: absolute;
-    top: -100px;
-    left: -50px;
-    width: 150px;
-    z-index: 10;
-    pointer-events: none;
-
-    img {
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  .map-video-popup {
+.map-video-popup {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,11 +55,13 @@ transition: all 200ms ease;
   height: 600px;
   z-index: 10;
   background: #000;
-  border: 2px solid #fff;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
 
-  iframe {
+  video {
     width: 100%;
     height: 100%;
     border: none;
@@ -92,21 +70,27 @@ transition: all 200ms ease;
   .close-button {
     position: absolute;
     top: 4px;
-    right: 6px;
+    right: 12px;
     background: none;
     border: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
   }
 }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+.delayed-fadeIn {
+  animation: delayedFadeIn 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes delayedFadeIn {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: auto;
   }
 }

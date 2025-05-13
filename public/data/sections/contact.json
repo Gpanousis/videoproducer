@@ -54,28 +54,11 @@
             },
 
             "items": [
-                {
-                    "value": "+1 (123) 456-7890",
-                    "links": [
-                        {"href": "tel:11234567890"}
-                    ],
-                    "icon": {
-                        "img": null,
-                        "fa": "fa-solid fa-phone",
-                        "faColors": {"bg": null, "fill": null}
-                    },
-                    "locales": {
-                        "en": {"title": "Phone"},
-                        "es": {"title": "Teléfono"},
-                        "fr": {"title": "Téléphone"},
-                        "ko": {"title": "전화"}
-                    }
-                },
 
                 {
-                    "value": "mark.choi@email.com",
+                    "value": "voltvideoprod@gmail.com",
                     "links": [
-                        {"href": "mailto:mark.choi@email.com"}
+                        {"href": "mailto:voltvideoprod@gmail.com"}
                     ],
                     "icon": {
                         "img": null,
@@ -89,9 +72,27 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Volt_Fpv",
                     "links": [
-                        {"href": "https://linkedin.com"}
+                        {"href": "https://www.youtube.com/@Volt_Fpv"}
+                    ],
+                    "icon": {
+                        "img": null,
+                        "fa": "fa-brands fa-youtube",
+                        "faColors": {"bg": null, "fill": null}
+                    },
+                    "locales": {
+                        "en": {"title": "Youtube"},
+                        "es": {"title": "Teléfono"},
+                        "fr": {"title": "Téléphone"},
+                        "ko": {"title": "전화"}
+                    }
+                },
+
+                {
+                    "value": "Andreas A.",
+                    "links": [
+                        {"href": "https://www.linkedin.com/in/andreas-a-216ba0169/"}
                     ],
                     "icon": {
                         "img": null,
@@ -104,9 +105,9 @@
                 },
 
                 {
-                    "value": "Mark Choi",
+                    "value": "andreas.apostoloy",
                     "links": [
-                        {"href": "https://facebook.com"}
+                        {"href": "https://www.facebook.com/andreas.apostoloy"}
                     ],
                     "icon": {
                         "img": null,
@@ -119,9 +120,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Volt_Fpv",
                     "links": [
-                        {"href": "https://instagram.com"}
+                        {"href": "https://www.instagram.com/volt_fpv/"}
                     ],
                     "icon": {
                         "img": null,
@@ -134,9 +135,9 @@
                 },
 
                 {
-                    "value": "@markchoi",
+                    "value": "@Volt_Fpv",
                     "links": [
-                        {"href": "https://tiktok.com"}
+                        {"href": "https://www.tiktok.com/@volt_fpv"}
                     ],
                     "icon": {
                         "img": null,
