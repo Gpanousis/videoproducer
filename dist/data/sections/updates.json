@@ -1,0 +1,63 @@
+{
+    "locales": {
+        "en": {
+            "title": "Interactive Map",
+            "title_menu": "Map",
+            "title_long_prefix": "Take a look at my",
+            "title_long": "Video **Map**"
+        },
+
+        "es": {
+            "title": "Vida Reciente",
+            "title_menu": "Actualizaciones",
+            "title_long_prefix": "Consulta mis",
+            "title_long": "Actualizaciones **Recientes**"
+        },
+
+        "fr": {
+            "title": "Vie Récente",
+            "title_menu": "Mises à Jour",
+            "title_long_prefix": "Découvrez mes",
+            "title_long": "Dernières **Mises à Jour**"
+        },
+
+        "ko": {
+            "title": "최근의 삶",
+            "title_menu": "업데이트",
+            "title_long_prefix": "내 최근",
+            "title_long": "**업데이트**를 확인해 보세요"
+        }
+    },
+
+    "articles": [
+        {
+            "id": "article-map",
+            "component": "ArticleMap",
+            "config": {},
+            "locales": {},
+
+            "items": [
+    {
+      "id": "athens",
+      "title": "Athens City",
+      "location": {
+        "coordinates": [23.7275, 37.9838]  
+      },
+      "media": {
+        "video": "videos/vid1.mp4"  
+      }
+    },
+    {
+      "id": "thessaloniki",
+      "title": "Thessaloniki City",
+      "location": {
+        "coordinates": [22.9444, 40.6401]
+      },
+      "media": {
+        "video": "videos/vid2.mp4"
+      }
+    }
+  ]
+        }
+    ]
+}
